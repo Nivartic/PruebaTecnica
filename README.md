@@ -4,7 +4,7 @@ Este repositorio contiene los componentes tanto del frontend (Angular) como del 
 
 ## Descripción
 
-Esta aplicación muestra una lista de personajes de la serie Rick y Morty. Permite a los usuarios ver los personajes, navegar a través de la lista y ver detalles de un personaje específico. El frontend está construido con Angular y el backend con Spring Boot, que obtiene los datos de la <mcurl name=\"API de Rick y Morty\" url=\"https://rickandmortyapi.com/\"></mcurl>.
+Esta aplicación muestra una lista de personajes de la serie Rick y Morty. Permite a los usuarios ver los personajes, navegar a través de la lista y ver detalles de un personaje específico. El frontend está construido con Angular y el backend con Spring Boot, que obtiene los datos de la "API de Rick y Morty\" url=\"https://rickandmortyapi.com/\"
 
 ## Requisitos Previos
 
