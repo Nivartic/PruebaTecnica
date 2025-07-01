@@ -30,13 +30,13 @@ class CharacterServiceTest {
     @Mock
     private WebClient webClient;
 
-     @Mock
-     private WebClient.RequestHeadersUriSpec requestHeadersUriSpec;
-     @Mock
-     private WebClient.RequestHeadersSpec requestHeadersSpec;
+    @Mock
+    private WebClient.RequestHeadersUriSpec requestHeadersUriSpec;
+    @Mock
+    private WebClient.RequestHeadersSpec requestHeadersSpec;
 
-     @Mock
-     private ResponseSpec responseSpec;
+    @Mock
+    private ResponseSpec responseSpec;
 
     private CharacterService characterService;
 
@@ -46,9 +46,9 @@ class CharacterServiceTest {
         characterService = new CharacterService(webClient);
 
         when(webClient.get()).thenReturn(requestHeadersUriSpec);
-         when(requestHeadersUriSpec.uri(any(String.class))).thenReturn(requestHeadersSpec);
-         when(requestHeadersUriSpec.uri(any(java.util.function.Function.class))).thenReturn(requestHeadersSpec);
-         when(requestHeadersSpec.retrieve()).thenReturn(responseSpec);
+        when(requestHeadersUriSpec.uri(anyString())).thenReturn(requestHeadersSpec);
+        when(requestHeadersUriSpec.uri(any(java.util.function.Function.class))).thenReturn(requestHeadersSpec);
+        when(requestHeadersSpec.retrieve()).thenReturn(responseSpec);
     }
 
     @Test
