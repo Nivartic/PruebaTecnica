@@ -121,7 +121,7 @@ class CharacterControllerTest {
         character.setLocation(location);
 
         character.setImage("https://rickandmortyapi.com/api/character/avatar/1.jpeg");
-        character.setEpisode(new String[]{"https://rickandmortyapi.com/api/episode/1"});
+        character.setEpisode(java.util.Arrays.asList("https://rickandmortyapi.com/api/episode/1"));
         character.setUrl("https://rickandmortyapi.com/api/character/1");
         character.setCreated("2017-11-04T18:48:46.250Z");
 
